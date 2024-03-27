@@ -1,0 +1,207 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    
+}
+nav {
+    height: 80px;
+    width: 100vw;
+    background-color: #f5f5f5b5;
+    color: black;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    animation: slideIn 2s ease forwards;
+}
+    .logo{
+        display: flex;
+        align-items: center;
+    }
+    .name{
+        font-size: 45px;
+        font-weight: bold;
+        color: rgb(156, 29, 97);
+    }
+    div.opt {
+        position: absolute;
+        right: 30px;
+    }
+
+    ul {
+        display: flex;
+        margin: 0;
+        text-align: center;
+        margin-top: 5px;
+    }
+
+    li {
+        margin: 0 5px;
+        padding: 10px;
+        list-style: none;
+       
+        font-size: 20px;
+        font-weight: bold;
+    }
+    div a{
+        text-decoration: none;
+        color: black;
+        margin: 0 18px;
+    }
+   
+   
+    .chkbtn{
+        font-size: 30px;
+        position: absolute;
+        right: 5vw;
+        cursor: pointer;
+        display: none;
+    }
+    #check{
+        display: none;
+    }
+    .hover-link:hover{
+        color: rgb(156, 29, 97);
+    }
+    
+    
+    
+    
+    
+    @keyframes slideIn {
+        from {
+            transform: translateY(-100%);
+            opacity: 0;
+        }
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+
+        
+    @media (max-width : 1100px) {
+        div a{
+            margin: 0 15px;
+        }
+        li{
+            font-size: 18px;
+        }
+        .name{
+            font-size: 40px;
+        }
+    }
+ 
+        
+    
+    @media (max-width : 950px) {
+        .chkbtn{
+            display: block;
+            margin-top: 15px;
+            color: black;
+            transition: all 1s linear 0s; 
+        }
+        nav{
+            display: block;
+            color: black;
+        }
+        ul{
+            background-color: #f5f5f5b5;
+            display: block;
+            position: fixed;
+            width: 50vw;
+            height: 100vh;
+            transition: all 0.5s;
+            text-align: center;
+            
+        }
+        .opt{
+            position: absolute;
+            left: 100%;
+            transition: all 1s linear;
+        }
+
+        div .hover-link{
+            color: black;
+            font-size: 35px;
+            margin-right: 46px; 
+            line-height: 60px;
+        }
+        .border:hover{
+            border: 2px solid black;
+        
+        }
+        #check:checked ~ .opt{
+        left: 50%;
+        transition: all 1s linear 0s;     
+        
+    }
+        #check:checked ~ .chkbtn{
+        transform: rotate(180deg);
+        transition: all 1s linear 0s; 
+    }
+
+    }
+
+body {
+    font-family: 'Josefin sans';
+    margin: 0;
+    padding: 0;
+    
+    background-color:#E3E2DF;
+    
+   
+    
+    
+}
+.z
+{
+  color:#18191a;
+  margin-left:4%;
+  margin-right:4%;
+  margin-top: 3%;
+  padding-bottom: 3%;
+  font-size: 24px;
+}
+
+header {
+    background-color: rgb(154, 23, 80);
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    text-align: left;
+}
+
+a
+{
+    color: #000000;
+    font-family: josefin sans;  
+    font-size: 20px;
+    margin-top: 0.8cm; 
+    margin-left: 1.7CM;
+    text-decoration:none;
+    font-weight: bold;
+    
+}
+a:hover
+{
+    color:rgb(156, 29, 97);
+}
+.grid-container
+{
+    background-color:whitesmoke;
+    width:80%;
+    margin-left: 10%;
+    margin-top: 2%;
+   
+    padding-top: 3%;
+}
+
+.rev
+{
+    margin-left: 4%;
+    color:#9A1750;
+    font-size: 54px;
+    margin-bottom: 1%;
+}
